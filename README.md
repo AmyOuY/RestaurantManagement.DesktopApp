@@ -17,29 +17,40 @@ Clicking the "Attendant" button will display the Attendant Viewer form, which ca
 
 
 
-Management Form
+--------Management Form--------
 <img src="./Management_DashBoard.png">
 
 
-Management Form
+--------Order Dashboard--------
 <img src="./Order_DashBoard.png">
 
 
 
-Management Form
-<img src="./Management_DashBoard.png">
+--------Create Order--------
+<img src="./Create_Order.png">
 
 
 
-Management Form
+--------Order Viewer--------
 <img src="./Order_Viewer.png">
 
 
 
-Management Form
+--------Email Bill--------
+<img src="./Bill_Email.png">
+
+
+
+Food Viewer
 <img src="./Food_Viewer.png">
 
 
 
-Management Form
+Table Viewer
+<img src="./Table_Viewer.png">
+
+
+
+
+Attendant Viewer
 <img src="./Employee_Viewer.png">
