@@ -41,16 +41,16 @@ Clicking the "Attendant" button will display the Attendant Viewer form, which ca
 
 
 
-Food Viewer
+--------Food Viewer--------
 <img src="./Food_Viewer.png">
 
 
 
-Table Viewer
+--------Table Viewer--------
 <img src="./Table_Viewer.png">
 
 
 
 
-Attendant Viewer
+--------Attendant Viewer--------
 <img src="./Employee_Viewer.png">
