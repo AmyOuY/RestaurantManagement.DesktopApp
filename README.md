@@ -37,7 +37,7 @@ Clicking the "Attendant" button will display the Attendant Viewer form, which ca
 
 
 --------Email Bill--------
-<img src="./Bill_Email.png">
+<img src="./formViews/Bill_Email.png">
 
 
 
