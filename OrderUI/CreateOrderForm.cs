@@ -114,14 +114,22 @@ namespace OrderUI
 
         private void selectFoodButton_Click(object sender, EventArgs e)
         {
-            FoodModel f = new FoodModel();
-          
-            f.FoodType = foodTypeDropDown.Text;
-            f.FoodName = foodNameDropDown.Text;
-            f.Price = decimal.Parse(priceValue.Text);
-            f.Quantity = int.Parse(quantityValue.Text);
+            string foodName = foodNameDropDown.Text;
+            FoodModel existingFood = selectedFood.Where(x => x.FoodName == foodName).FirstOrDefault();
 
-            selectedFood.Add(f);
+            if (existingFood != null)
+            {
+                existingFood.Quantity += int.Parse(quantityValue.Text);
+            }
+            else
+            {
+                FoodModel f = new FoodModel();
+                f.FoodType = foodTypeDropDown.Text;
+                f.FoodName = foodNameDropDown.Text;
+                f.Price = decimal.Parse(priceValue.Text);
+                f.Quantity = int.Parse(quantityValue.Text);
+                selectedFood.Add(f); 
+            }
 
             WireUpListBox();           
         }

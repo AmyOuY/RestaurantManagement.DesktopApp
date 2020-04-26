@@ -45,7 +45,7 @@ namespace OrderLibrary.Models
         {
             get
             {
-                return $"{ FoodName }      { Price }      {Quantity }";
+                return $"{ FoodType }      { FoodName }      { Price }      {Quantity }";
             }      
         }
     }

@@ -3,6 +3,7 @@ using OrderLibrary.Models;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
 using System.Drawing;
 using System.Linq;
@@ -17,7 +18,6 @@ namespace OrderUI
         private int tableNumber;
         private OrderModel order;
         private decimal subTotal;
-        private const float TaxRatio = 0.15f;
         private decimal tax;
         private decimal total;
 
@@ -51,7 +51,8 @@ namespace OrderUI
 
             subtotalValue.Text = subTotal.ToString();
 
-            tax = subTotal * (decimal)TaxRatio;
+            decimal taxRate = decimal.Parse(ConfigurationManager.AppSettings["taxRate"]);
+            tax = subTotal * taxRate;
             taxValue.Text = tax.ToString();
 
             total = subTotal + tax;
@@ -67,19 +68,19 @@ namespace OrderUI
 
             StringBuilder body = new StringBuilder();
             body.AppendLine($"<h1>{ o.Attendant }, A bill is ready to pay</h1>");
-            body.AppendLine($"<br><strong>Table: { o.TableNumber }</strong></br>");
+            body.AppendLine($"<h2><strong>Table: { o.TableNumber }</strong></h2>");
             body.AppendLine(".......................................................................");
 
             foreach (FoodModel f in o.FoodOrdered)
             {
-                body.Append($"<br><strong>{ f.FoodName }: { f.Price } x { f.Quantity }</stong></br>");
+                body.Append($"<br><strong>{ f.FoodType } &emsp { f.FoodName }: &emsp { f.Price } &emsp { f.Quantity }</stong></br>");
             }
 
             body.AppendLine(".......................................................................");
 
-            body.Append($"<br><strong>Subtotal: { subTotal }</strong></br>");
-            body.Append($"<br><strong>Tax: { tax }</strong></br>");
-            body.Append($"<br><strong>Total: { total }</strong></br>");
+            body.Append($"<br><strong>Subtotal: &emsp { subTotal }</strong></br>");
+            body.Append($"<br><strong>Tax: &emsp { tax }</strong></br>");
+            body.Append($"<br><strong>Total: &emsp { total }</strong></br>");
 
             EmailLogic.SendEmail(to, subject, body.ToString());
         }
