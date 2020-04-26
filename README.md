@@ -18,11 +18,11 @@ Clicking the "Attendant" button will display the Attendant Viewer form, which ca
 
 
 --------Management Form--------
-<img src="./Management_DashBoard.png">
+<img src="./formViews/Management_DashBoard.png">
 
 
 --------Order Dashboard--------
-<img src="./Order_DashBoard.png">
+<img src="./formViews/Order_DashBoard.png">
 
 
 
@@ -32,7 +32,7 @@ Clicking the "Attendant" button will display the Attendant Viewer form, which ca
 
 
 --------Order Viewer--------
-<img src="./Order_Viewer.png">
+<img src="./formViews/Order_Viewer.png">
 
 
 
@@ -42,15 +42,15 @@ Clicking the "Attendant" button will display the Attendant Viewer form, which ca
 
 
 --------Food Viewer--------
-<img src="./Food_Viewer.png">
+<img src="./formViews/Food_Viewer.png">
 
 
 
 --------Table Viewer--------
-<img src="./Table_Viewer.png">
+<img src="./formViews/Table_Viewer.png">
 
 
 
 
 --------Attendant Viewer--------
-<img src="./Employee_Viewer.png">
+<img src="./formViews/Employee_Viewer.png">
