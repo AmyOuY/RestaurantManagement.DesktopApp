@@ -1,56 +1,46 @@
-# Restaurant Ordering System -- a C# Windows Forms App (.NET Framework)
+# Restaurant Ordering System (C# .NET Framework)
 
-The OrderLibrary is a class library that contains class models for different objects and data access interface for storing and accessing data through SQL database.
-
-The OrderUI implements the user interface using Windows Forms. 
-
-Management Form is the entry interface for managing the orders, food, dining tables and employees in the restaurant.
-
-Clicking the "order" button will display the Order Dashboard, which can be used to load the Create Order form with the "Create Order" button and send order details to the chef by email or load the Order Viewer form with the "Load Order" button to display the details of current orders based on dining tables and clicking the "Pay Bill" button will email the bill to the attendant that served that table.  
-
-Clicking the "Food" button will display the Food Viewer form, which can be used to add new food to the database.
-
-Clicking the "Table" button will display the Table Viewer form, which can be used to add new dining tables to the database.
-
-Clicking the "Attendant" button will display the Attendant Viewer form, which can be used to add new employees to the database.
+<ul>
+  <li> A Desktop App that allows users to manage the employees, orders, food and dining tables in the restaurant. </li>
+  <li> Front-end was implemented with Windows Forms that could send Order and Bill emails using the Simple Mail Transfer Protocol (<strong>SMTP</strong>). </li>
+  <li> Back-end data access and storage was implemented with Microsoft SQL database using Dapper. </li>
+</ul>
 
 
+<h3> In the entry interface each button-click will display the corresponding form for further management. </h3>
+<img src="./formViews/Management_DashBoard.png" width="800">
 
 
---------Management Form--------
-<img src="./formViews/Management_DashBoard.png">
-
-
---------Order Dashboard--------
-<img src="./formViews/Order_DashBoard.png">
+<h3> Order Dashboard allows loading order info for the chosen dining table or display form for creating order. </h3>
+<img src="./formViews/Order_DashBoard.png" width="800">
 
 
 
---------Create Order--------
-<img src="./formViews/Create_Order.png">
+<h3> Create Order form: the "Food Name" drop-down only displays food that belongs to the chosen "Food Type". After filling in required food info the "Select Food" button will add food to the list-box while the "Delete selected" button will delete the selected food from the list-box. Clicking the "Create" button will send order details to the chef for preparing food. </h3>
+<img src="./formViews/Create_Order.png" width="800">
 
 
 
---------Order Viewer--------
-<img src="./formViews/Order_Viewer.png">
+<h3> Order Viewer shows details of the order based on dining tables. Clicking the "Pay Bill" button will email the bill to the attendant that served the table for collecting bills. </h3>
+<img src="./formViews/Order_Viewer.png" width="800">
 
 
 
---------Email Bill--------
-<img src="./formViews/Bill_Email.png">
+<h3> Use Papercut (a simplified SMTP server) to receive Bill messages. </h3>
+<img src="./formViews/Bill_Email.png" width="800">
 
 
 
---------Food Viewer--------
-<img src="./formViews/Food_Viewer.png">
+<h3> Food Viewer form for creating new food in the SQL database. </h3>
+<img src="./formViews/Food_Viewer.png" width="800">
 
 
 
---------Table Viewer--------
-<img src="./formViews/Table_Viewer.png">
+<h3> Table Viewer form for creating new dining tables in the SQL database. </h3>
+<img src="./formViews/Table_Viewer.png" width="800">
 
 
 
 
---------Attendant Viewer--------
-<img src="./formViews/Employee_Viewer.png">
+<h3> Attendant Viewer form for creating new employees in the SQL database. </h3>
+<img src="./formViews/Employee_Viewer.png" width="800">
