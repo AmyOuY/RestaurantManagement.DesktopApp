@@ -13,7 +13,7 @@
 
 
 <hr>
-<h3> Order Dashboard allows loading order info for the chosen dining table or display form for creating order. </h3>
+<h3> Order Dashboard allows loading order info for the chosen dining table or display form for creating new order. </h3>
 <img src="./formViews/Order_DashBoard.png" width="600">
 
 
