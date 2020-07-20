@@ -18,7 +18,7 @@
 
 
 <hr>
-<h3> Create Order form: the "Food Name" drop-down only displays food that belongs to the chosen "Food Type". After filling in required food info the "Select Food" button will add food to the list-box while the "Delete selected" button will delete the selected food from the list-box. Clicking the "Create" button will send order details to the chef for preparing food. </h3>
+<h3> Create Order form: the "Food Name" drop-down only displays food that belongs to the chosen "Food Type". After filling in required food info the "Select Food" button will add food to the list-box while the "Delete selected" button will delete the selected food from the list-box. Clicking the "Create Order" button will write order info to SQL database and send order details to the chef for preparing food. </h3>
 <img src="./formViews/Create_Order.png" width="900">
 
 
