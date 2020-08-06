@@ -1,9 +1,9 @@
 # Restaurant Ordering System (C# .NET Framework)
 
 <ul>
-  <li> A Desktop App that allows users to manage the employees, orders, food and dining tables in the restaurant. </li>
+  <li> A Desktop App that allows users to manage employees, orders, food and dining tables in the restaurant. </li>
   <li> Front-end was implemented with Windows Forms that could send Order and Bill emails using the Simple Mail Transfer Protocol (<strong>SMTP</strong>). </li>
-  <li> Back-end data access and storage was implemented with Microsoft SQL database using Dapper. </li>
+  <li> Back-end data storage and access was implemented with Microsoft SQL Server using Dapper. </li>
 </ul>
 
 
